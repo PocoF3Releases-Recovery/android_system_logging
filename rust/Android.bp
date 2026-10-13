@@ -64,6 +64,7 @@ rust_library {
 
 rust_library {
     name: "liblog_event_list",
+    recovery_available: true,
     crate_name: "log_event_list",
     srcs: ["src/liblog_event_list.rs"],
     rustlibs: ["liblog_event_list_bindgen"],
@@ -85,6 +86,7 @@ rust_defaults {
 
 rust_library {
     name: "libstructured_log",
+    recovery_available: true,
     crate_name: "structured_log",
     srcs: [
         "src/structured_logger.rs",
